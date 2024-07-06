@@ -3,8 +3,6 @@ import ChatBot from 'react-simple-chatbot';
 
 function App() {
   return (
-    <div>
-      <h2>Chat with me for a little bit !</h2>
       <ChatBot
         steps={[
           {
@@ -85,7 +83,6 @@ function App() {
         ]}
         floating={true}
       />
-    </div>
     
   );
 }
