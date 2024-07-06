@@ -1,10 +1,11 @@
 import './App.css';
 import ChatBot from 'react-simple-chatbot';
-import { Box } from '@mui/material';
-
 
 function App() {
   return (
+    <div>
+      <h2>Chat with me for a little bit !</h2>
+      <ChatBot
         steps={[
           {
             id: '1',
@@ -41,20 +42,20 @@ function App() {
             id: '6',
             message: 'Please select the problem where you need our assisstance',
             trigger: '5',
-            end: false,
+            end: false, 
           },
-
+          
           {
             id: '7',
             message: 'Please select the technical problem you are having',
             trigger: '5',
-            end: false,
+            end: false, 
           },
           {
             id: '8',
-            message: 'To access the Dashboard, simply log in to your FleetOps account and click on the Dashboard tab.',
+            message: 'To access the Dashboard, simply log in to your FleetOps account and click on the Dashboard tab.',        
             trigger: '12',
-            end: false,
+            end: false, 
           },
           {
             id: '9',
@@ -66,22 +67,26 @@ function App() {
             id: '10',
             message: 'FleetOps is a comprehensive fleet management application designed to help businesses manage their vehicles, drivers, clients, generate reports, and provide analytics.',
             trigger: '12',
-            end: false,
+            end: false, 
           },
           {
             id: '11',
             message: 'You can learn more about FleetOps by deeply exploring the home page of the app. For a more sophisticated experience, we welcome you to create a FleetOps account to use our innovative fleet management solutions.',
             trigger: '12',
-            end: false,
+            end: false, 
           },
           {
             id: '12',
             message: 'Do you have an another question ?',
             trigger: '5',
-            end: false,
+            end: false, 
           },
+          
         ]}
-        floating={true} /></>
+        floating={true}
+      />
+    </div>
+    
   );
 }
 
